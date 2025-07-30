@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamdi- Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #EAC7C7;
+      --blue-light: #D5E3E8;
+      --rose: #E8A2A2;
+      --cream: #F7F5EB;
+      --blue-dark: #A0C3D2;
+      --beige: #EAE0DA;
+      --text-dark: #333333;
+      --text-accent: #5a5a5a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, var(--cream), var(--blue-light));
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--text-dark);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(234, 199, 199, 0.85);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 20px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left h1 {
+      font-size: 28px;
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-btn {
+      background: transparent;
+      color: var(--text-dark);
+      padding: 10px 18px;
+      font-size: 16px;
+      border: 2px solid var(--rose);
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--rose);
+      color: white;
+    }
+
+    .nav-right .nav-img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--rose);
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 18px;
+      color: var(--text-accent);
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin: 30px 0;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background-color: var(--blue-light);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-buttons .btn {
+      background-color: var(--rose);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .contact-buttons .btn:hover {
+      background-color: var(--pink);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <h1>Hamdi</h1>
+    </div>
+    <nav class="nav-center">
+      <a href="about.html" class="nav-btn">About Me</a>
+      <a href="resume.html" class="nav-btn">Resume</a>
+      <a href="blog.html" class="nav-btn">Blog</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <img src="your-image.png" alt="Your Image" class="nav-img" />
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p><!-- Add a short bio about yourself here. Maybe your major, passions, and goals. --></p>
+    </div>
+  </section>
+
+  <section class="section" id="resume">
+    <h2>Personal Projects</h2>
+    <div class="card">
+      <p><!-- You can embed a PDF here or list your experience manually. --></p>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-buttons">
+      <a href="https://www.linkedin.com/in/hamdi-hussein-a0326b29a/" class="btn" target="_blank">LinkedIn</a>
+      <a href="mailto:hamdi.hussein101@gmail.com" class="btn">Gmail</a>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #EAC7C7;
+      --blue-light: #D5E3E8;
+      --rose: #E8A2A2;
+      --cream: #F7F5EB;
+      --blue-dark: #A0C3D2;
+      --beige: #EAE0DA;
+      --text-dark: #333333;
+      --text-accent: #5a5a5a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, var(--cream), var(--blue-light));
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: var(--text-accent);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+      color: var(--text-accent);
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-[#E8A2A2]">Hamdi Hussein</h1>
+      <nav class="space-x-6 text-sm font-medium text-[#A0C3D2]">
+        <a href="index.html" class="hover:text-[#E8A2A2]">Home</a>
+        <a href="resume.html" class="hover:text-[#E8A2A2]">Resume</a>
+        <a href="blog.html" class="hover:text-[#E8A2A2]">Blog</a>
+        <a href="#contact" class="hover:text-[#E8A2A2]">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Hi, I’m Hamdi Hussein</h2>
+      <p>I’m a Second-year Computer Science major at CSU East Bay. I’m passionate about bridging creativity and tech, and I'm on a mission to build a meaningful career in <em>tech</em>.</p>
+    </div>
+
+    <div class="section">
+      <h2>Why Tech?</h2>
+      <p>I didn’t grow up coding;but once I saw how people use technology to solve real-life problems, I fell in love with it. I’m especially drawn to <em>software development and design</em>, where logic meets creativity.</p>
+    </div>
+
+    <div class="section">
+      <h2>What I’m Learning</h2>
+      <p>I’m currently diving into web development with CodePath, while balancing school and work. Every challenge is a step toward leveling up my skills—and I’m very excited for all of it.</p>
+    </div>
+
+    <div class="section">
+      <h2>Interests & Hobbies</h2>
+      <p>When I’m not coding, I love reading about technology, writing for my blog, and exploring new places. I also have a keen interest in law and hope to pursue it alongside my tech career in the future</p>
+    </div>
+
+    <div class="section">
+      <h2>Future Goals</h2>
+      <p>In the near future, I’m focused on improving my skills in full-stack development and participating in internships that will help me grow as a developer. My long-term goal is to work on projects that bridge the gap between technology and social impact./p>
+    </div>
+
+    <div class="section">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>I’m 5’10.</li>
+        <li>I’m the person who always orders the same meal when I go to my favorite restaurant.</li>
+        <li>I’ve been exploring web development lately and can’t wait to dive deeper into full-stack technologies.</li>
+        <li>I’m a fan of minimalist design and love creating clean, functional web interfaces that are both easy to use and visually appealing.</li>
+        <li>I love getting lost in old libraries and finding obscure books on coding, mysteries and psychology.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+<header style="background: linear-gradient(to right, var(--cream), var(--blue-light)); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); position: sticky; top: 0; z-index: 50;">
+    <div class="nav-container">
+      <h1 class="name" style="font-family: 'Playfair Display', serif; font-size: 1.75rem; color: var(--rose);">Hamdi Hussein</h1>
+      <nav style="display: flex; align-items: center;">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>

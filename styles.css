@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #EAC7C7;
+      --blue-light: #D5E3E8;
+      --rose: #E8A2A2;
+      --cream: #F7F5EB;
+      --blue-dark: #A0C3D2;
+      --beige: #EAE0DA;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--cream);
+      color: var(--blue-dark);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(234, 199, 199, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left h1 {
+      font-size: 24px;
+      color: var(--blue-dark);
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-btn {
+      background: var(--rose);
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-btn:hover {
+      background: var(--pink);
+      transform: scale(1.05);
+    }
+
+    .nav-right .nav-img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .contact {
+      padding: 80px 20px;
+      background-color: var(--blue-light);
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: var(--blue-dark);
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .contact-buttons .btn {
+      background-color: var(--rose);
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact-buttons .btn:hover {
+      background-color: var(--pink);
+    }
+  </style>
+</head>
